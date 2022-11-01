@@ -43,6 +43,5 @@ RSpec.describe Election do
       expect(election.candidates.count).to eq(5)
       expect(election.vote_counts).to eq({"Diana D"=>4, "Roberto R"=>1, "Diego D"=>10, "Rita R"=>6, "Ida I"=>6})
     end
-
   end
 end

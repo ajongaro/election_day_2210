@@ -19,4 +19,17 @@ RSpec.describe Race do
       expect(race.candidates[1].name).to eq("Roberto R")
     end
   end
+
+  describe '#open? & close!' do
+    it 'returns true by default' do
+      expect(race.open?).to be true
+    end
+    
+    it 'returns false when race has been closed' do
+      expect(race.open?).to be true
+
+      race.close!
+      expect(race.open?).to be false
+    end
+  end
 end
